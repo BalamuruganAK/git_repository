@@ -1,0 +1,12 @@
+ 
+{
+  "name": "Ubuntu 24.04.2 LTS Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {},
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "sudo apt update && sudo apt install -y postgresql postgresql-contrib",
+  "forwardPorts": [5432],
+  "remoteUser":"codespace"
+}
